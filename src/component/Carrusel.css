@@ -1,0 +1,63 @@
+.section-swiper{
+  position: relative;
+  width: 100%;
+ height: 100vh;
+ overflow: hidden;
+ display: flex;
+ flex-direction: column;
+ justify-content:space-between;
+ align-items:center;
+ background: #fff;
+ padding:5em 0;
+}
+h2{
+  font: size 1.5em;
+  color: #074585;
+  font-weight: 600;
+}
+.swiper-container{
+  width: 80%;
+}
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.mySwiper {
+  width: 100%;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height:400px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  filter:saturate(.5) blur(4px) opacity(95%);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+  border: 1px solid #ffffff70;
+  outline: #ffffff70 5px solid; 
+  
+}
+.swiper-slide-active{
+  transition: all 0.2s ease-in;
+  filter:none;
+
+}
+
+.swiper-slide img {
+  display: block;
+  height: 100%;
+}
+
+.span-swiper{
+  position: absolute;
+  top: 1em;left: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: none;
+}

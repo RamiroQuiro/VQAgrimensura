@@ -1,0 +1,34 @@
+#footer {
+    background: #322d28;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: auto;
+    height: 300px;
+    color: #cecece;
+    
+}
+
+#footer li{
+    list-style:lower-greek;
+    font-weight: bold;
+    line-height: 2.3em;
+}
+#footer li a{
+    text-decoration:none;
+    color: #cecece;
+}
+
+.nameFooter{
+    width: 35%;
+    text-align:center;
+    border-radius: 20px;
+    padding: 2em;
+    transition: .25s ease-in-out;
+    cursor:alias;
+}
+.nameFooter:hover{
+    font-size: 1.04rem;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px 1px rgba(122, 122, 122, 0.288);
+}
