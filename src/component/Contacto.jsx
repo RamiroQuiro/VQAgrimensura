@@ -1,6 +1,6 @@
 import React from "react";
 import "./contacto.css";
-import "./useWhatsApp.js";
+{/*import "./useWhatsApp.js";*/}
 
 
 
