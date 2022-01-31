@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from "react-scroll";
 import logo from "../images/logo.png";
 import "./navbar.css";
 
@@ -30,10 +31,10 @@ export default function Navbar(props) {
             <span className='nav-icon'></span>
         </label>
         <ul className='menu'>
-            <li><a href="#inicio" className='active'> inicio </a></li>
-            <li><a href="#inicio"> servicios </a></li>
-            <li><a href="#inicio"> trabajos </a></li>
-            <li><a href="#inicio"> contacto </a></li>
+            <li className="link"><Link to='main' smooth={true} duration={1000}>Inicio</Link></li>
+            <li className="link"><Link to='servicios'smooth={true} duration={1000}>servicios</Link></li>
+            <li className="link"><Link to='section-swiper'smooth={true} duration={1000}>trabajos</Link></li>
+            <li className="link"><Link to='contact'smooth={true} duration={1000}>contacto</Link></li>
         </ul>
 
 </nav>

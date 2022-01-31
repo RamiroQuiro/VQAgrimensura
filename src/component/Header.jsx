@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-scroll";
 import logo from "../images/logo.png";
 import circulo from "../images/circuloAmarillo.png";
 import videoBkg from "../images/videoBkg.mp4";
@@ -32,9 +33,7 @@ export default function Header(props) {
           <span> • Victor Quiroga • </span> Agrimensura
         </h1>
         <p className="details">Ingeniero Agrimensor</p>
-        <a href="#Inicio" className="cv-btn">
-          Contacto
-        </a>
+          <Link to='contact' smooth={true} duration={4000} className="cv-btn">Contacto</Link>
       </div>
     </div>
   );

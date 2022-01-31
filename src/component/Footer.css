@@ -1,5 +1,5 @@
 #footer {
-    background: #322d28;
+    background: #3f3f3f;
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -26,6 +26,10 @@
     padding: 2em;
     transition: .25s ease-in-out;
     cursor:alias;
+}
+.nameFooter h2{
+    
+    text-shadow:  1px -1px 2px #f5f5f5;
 }
 .nameFooter:hover{
     font-size: 1.04rem;

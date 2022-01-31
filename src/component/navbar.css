@@ -155,3 +155,7 @@ nav .menu-btn,
 .menu-icon {
     display: none;
 }
+
+.menu .link{
+    cursor: pointer;
+}

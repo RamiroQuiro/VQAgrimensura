@@ -3,7 +3,6 @@ root{
   --color-text-1:#3f3f3f;
   --color-primary:#074585;
   --color-secondary:#c42a2a;
-
 }
 
 body {
@@ -115,7 +114,7 @@ input {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(images/presentation.png);
+  
   text-align: center;
 }
 #presentaion h1 {
