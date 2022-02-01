@@ -22,9 +22,9 @@
     line-height: 2.3em;
     cursor: pointer;
 }
-#footer li a{
+#footer a{
     text-decoration:none;
-    color: #cecece;
+    color: #fff;;
 }
 
 .nameFooter{
@@ -45,33 +45,35 @@
     box-shadow: 0px 5px 10px 1px rgba(122, 122, 122, 0.288);
 }
 .footer-dorito{
-    
+    line-height: 1em;
    
     bottom: 0;
     display:none;
     z-index: -5;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
-    padding-top: 10px;
+    height: 100px;
     color: #fff;
     /*background: linear-gradient(180deg, #272727 20%, tomato );*/
     background: linear-gradient(130deg, #c76700 1%,#ff8200 100% );
+    padding:10px 0;
 }
 .active{
     display:flex;
 }
 .footer-dorito .descriptionFooter{
-    font-size: .9em;
+    font-size: .8em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width:80%;
-    height: 100%;
-    margin:auto ;
-    border:1px solid #ccceee20;
+    height:80%;
+    padding: 10px 0;
+    
+    border:1px solid #ffffff20;
     border-radius: 15px;
+    
 }
 
 .logoFooter{
