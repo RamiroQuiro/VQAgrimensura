@@ -12,6 +12,7 @@ body {
   font-family:'Raleway', sans-serif;
   overflow-x: hidden;
   background: #F8F4F2;
+  z-index: 0;
 }
 * {
   box-sizing: border-box;
