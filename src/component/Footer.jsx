@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
         <div className="descriptionFooter">
           <span>
-            Copyright ©2022 All rights reserved | Diseño y produccion by <a href="https://ramirochangomoreno.github.io/DoritoWebDesign."> <b>Dorito Web Design</b>
+            Copyright ©2022 All rights reserved | Diseño y produccion by <a href="https://ramirochangomoreno.github.io/DoritoWebDesign." target="_blank"> <b>Dorito Web Design</b>
           </a></span>
           <ul className="redesFooter">
             <li><img src={facebook} alt="" /><a href="https://www.facebook.com/DoritoDesign" target="_blank"> facebook</a></li>

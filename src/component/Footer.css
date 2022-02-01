@@ -1,19 +1,22 @@
 #footer{
-    background: linear-gradient(200deg,#313131 50%,#515151) ;
     
 }
 
 .footer-container {
-    z-index: 1;    
+    z-index: 5;    
+    background: linear-gradient(200deg,#313131 50%,#515151) ;
     display: flex;
     justify-content:space-around;
     align-items: center;
     margin: auto;
     height: 350px;
+    width:100%;
     color: #cecece;
     box-shadow: 0px 5px 15px 0px #25252580;
     border-bottom: 2px solid #eeeeee70;
-    /*margin-bottom: 120px;*/
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 120px;
 }
 
 #footer li{
@@ -30,7 +33,7 @@
 .nameFooter{
     width: 35%;
     text-align:center;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 2em;
     transition: .25s ease-in-out;
     cursor:alias;
@@ -46,22 +49,22 @@
 }
 .footer-dorito{
     line-height: 1em;
-   
     bottom: 0;
-    display:none;
-    z-index: -5;
+    display:flex;
+    margin-top:-50px;
+    position: fixed;
+    z-index: -10;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
     color: #fff;
     /*background: linear-gradient(180deg, #272727 20%, tomato );*/
     background: linear-gradient(130deg, #c76700 1%,#ff8200 100% );
-    padding:10px 0;
+    padding:1em;
+    padding-top: 70px;
 }
-.active{
-    display:flex;
-}
+
 .footer-dorito .descriptionFooter{
+    
     font-size: .8em;
     display: flex;
     flex-direction: column;
@@ -69,8 +72,7 @@
     align-items: center;
     width:80%;
     height:80%;
-    padding: 10px 0;
-    
+    padding: 5px 0;
     border:1px solid #ffffff20;
     border-radius: 15px;
     
@@ -85,7 +87,7 @@
 
 .logoFooter img{
     width: 50%;
-    margin: auto;
+
 }
 
 .redesFooter{
@@ -94,6 +96,7 @@
     justify-content:space-between;
     align-items: center;
     list-style: none;
+    z-index: 10;
 }
 #footer .redesFooter li{
     margin: auto;
@@ -104,6 +107,9 @@
 }
 .redesFooter img{
     margin: auto 1em;
-    width: 5%;
+    width: 8%;
+    padding: 1px;
     height: auto;
+background:#ffffff80;
+border-radius:50%;
 }
