@@ -1,9 +1,25 @@
-import React from "react";
-import "./contacto.css"
+import React, {useState} from "react";
+import "./contacto.css";
+
 
 
 
 export default function Contact() {
+
+  const numerodani = "+5493854852410";
+const [nombreApellido,setNombre]=useState("");
+const [mail,setMail]=useState("");
+const [mensaje,setMensaje]=useState("");
+const mensajeWhatsApp= `https://wa.me/${numerodani}?text=Hola,%20te%20escribo%20desde%20tu%20sitio%20Web,%20mi%20nombre%20es%20${nombreApellido},%20te%20escribo%20para%20consultarte%20lo%20siguente:%20${mensaje},%20mi%20mail%20de%20contacto%20${mail},muchas%20gracias%20por%20su%20atención`;
+
+
+const enviarForm = (e) => {
+  e.preventDefault();
+  setTimeout(() =>{
+    window.open(mensajeWhatsApp,`_blank`);
+
+  },200)
+}
 
   return (
     <div id="contact">
@@ -37,13 +53,19 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Nombre y Apellido"
+                value={nombreApellido}
+                onChange={(e)=>setNombre(e.target.value)}
                 required
                 className="entrada"
                 id="nombreApellido"
               />
-            <input type="email" placeholder="nombre@mail.com" id="mail"required />
-            <textarea placeholder="Escribe tu consulta"  id="mensaje"required/>
-            <button id="send" type="submit">Enviar WhatsApp</button>
+            <input type="email" placeholder="nombre@mail.com" id="mail"required 
+            value={mail}
+            onChange={(e)=>setMail(e.target.value)}/>
+            <textarea placeholder="Escribe tu consulta"  id="mensaje"required
+             value={mensaje}
+             onChange={(e)=>setMensaje(e.target.value)}/>
+            <button id="send"  onClick={enviarForm}>Enviar WhatsApp</button>
           </form>
         </div>
       </div>

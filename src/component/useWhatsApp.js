@@ -1,10 +1,11 @@
-{const buttonSend = document.getElementById("send");
+import React, {useState} from "react";
+
+const buttonSend = document.getElementById("send");
 const numerodani = "+5493854852410";
-const formularioWhastApp = document.getElementById('formulario');
-let numero = "+5493855353174";
-let nombreApellido = document.getElementById("nombreApellido").value;
-let mail = document.getElementById("mail").value;
-let mensaje = document.getElementById("mensaje").value;
+const numero = "+5493855353174";
+const nombreApellido = document.getElementById("nombreApellido");
+const mail = document.getElementById("mail");
+const mensaje = document.getElementById("mensaje");
 
 const enviar = (e) => {
   e.preventDefault();
@@ -17,7 +18,6 @@ const enviar = (e) => {
   }, 200);
 }
 
-formularioWhastApp.addEventListener("click", enviar())
 
-}
+
 
