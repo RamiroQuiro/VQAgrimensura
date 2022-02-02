@@ -1,4 +1,4 @@
-const buttonSend = document.getElementById("send");
+{const buttonSend = document.getElementById("send");
 const numerodani = "+5493854852410";
 const formularioWhastApp = document.getElementById('formulario');
 let numero = "+5493855353174";
@@ -18,3 +18,6 @@ const enviar = (e) => {
 }
 
 formularioWhastApp.addEventListener("click", enviar())
+
+}
+

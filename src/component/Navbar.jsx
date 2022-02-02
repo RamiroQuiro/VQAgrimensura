@@ -12,7 +12,6 @@ export default function Navbar(props) {
 
         if(window.scrollY >=50){
             setnav(true);
-            console.log(setnav,nav)
         }
         else{
             setnav(false);

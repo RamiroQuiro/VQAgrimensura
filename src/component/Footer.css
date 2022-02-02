@@ -1,6 +1,4 @@
-#footer{
-    
-}
+
 
 .footer-container {
     z-index: 5;    
@@ -8,7 +6,6 @@
     display: flex;
     justify-content:space-around;
     align-items: center;
-    margin: auto;
     height: 350px;
     width:100%;
     color: #cecece;
@@ -16,9 +13,18 @@
     border-bottom: 2px solid #eeeeee70;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    margin-bottom: 120px;
+    margin: auto;
+    transform-origin: top center;
+    transition: transform  .5s ease-in-out;
 }
-
+.wrapper{
+    transition-delay: .2s;
+    cursor: pointer;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transform: translateY(-10px) scaleY(0.9);
+    margin-bottom: 100px;
+}
 #footer li{
     list-style:lower-greek;
     font-weight: bold;
@@ -40,7 +46,7 @@
 }
 .nameFooter h2{
     font-weight: bold;
-
+    
 }
 .nameFooter:hover{
     font-size: 1.04rem;
@@ -51,7 +57,9 @@
     line-height: 1em;
     bottom: 0;
     display:flex;
-    margin-top:-50px;
+    visibility: hidden;
+    opacity: 0;
+    margin-top:-100px;
     position: fixed;
     z-index: -10;
     justify-content: space-between;
@@ -60,7 +68,15 @@
     /*background: linear-gradient(180deg, #272727 20%, tomato );*/
     background: linear-gradient(130deg, #c76700 1%,#ff8200 100% );
     padding:1em;
-    padding-top: 70px;
+    transition: all .5s ease-in-out;
+    padding-top: 120px;
+    
+}
+#footer .active{
+    transition: all .2s ease-in-out;
+    visibility:visible;
+    opacity: 1;
+    transition-delay: .3s;
 }
 
 .footer-dorito .descriptionFooter{

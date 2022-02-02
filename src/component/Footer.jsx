@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-scroll";
 import logoDorito from "../images/dorito logo.png";
 import facebook from "../images/002-facebook.png"; 
@@ -8,18 +8,26 @@ import "./Footer.css";
 
 export default function Footer() {
 
-  const obtenerPixeles=()=> document.createElement.scrollTop || document.body.scrollTop;
-  
-  function consola () {
-    if (obtenerPixeles>100){
-      alert("aqui estoy")
+  const [doritoState, setDoritoState]=useState(false)
+  const d= document, w=window;
+
+  function scrollToElement() {
+
+    const pixelTop = w.scrollY;
+    if (pixelTop < 4280) {
+      setDoritoState(false);
+      console.log("este es el doritoState", doritoState);
+
+    } else {
+      setDoritoState(true);
+      console.log("este es pixeltop", pixelTop);
     }
   }
-  consola()
+w.addEventListener('scroll',scrollToElement);
 
   return (
     <footer id="footer">
-      <div className="footer-container">
+      <div className={doritoState ? "footer-container wrapper" : "footer-container"}>
         <ul>
           <li className="link">
             <Link to="main" smooth={true} duration={1000}>
@@ -53,7 +61,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <div className="footer-dorito active">
+      <div className={doritoState? "footer-dorito active" : "footer-dorito"}>
         <div className="logoFooter">
           <img src={logoDorito} alt="" />
         </div>
