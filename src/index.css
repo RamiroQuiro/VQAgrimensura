@@ -286,9 +286,7 @@ input {
   }
 }
 @media (max-width: 600px) {
-  .name {
-    width: 60%;
-  }
+  
 }
 .scroll {
   left: 42.5%;
@@ -308,6 +306,7 @@ input {
   .header-btns {
     margin: 0;
   }
+
   .menu {
     display: none;
     position: absolute;
@@ -378,6 +377,29 @@ input {
   }
   nav .menu-btn:checked ~ .menu {
     display: block;
+  }
+  nav a.logo{
+    margin: auto;
+  }
+  .name{
+    font-size: 13px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow-wrap:  break-word;
+    width:80vw;
+  }
+  .name h1{
+    font-size: 2em;
+    line-height:2em;
+  }
+  .name img{
+    margin: auto;
+    margin-left: 0;
+  }
+  .name .cv-btn{
+    margin: auto;
   }
 }
 @media (max-width: 400px) {

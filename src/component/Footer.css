@@ -11,19 +11,19 @@
     color: #cecece;
     box-shadow: 0px 5px 15px 0px #25252580;
     border-bottom: 2px solid #eeeeee70;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     margin: auto;
     transform-origin: top center;
-    transition: transform  .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 .wrapper{
-    transition-delay: .2s;
+    transition-delay: .5s;
     cursor: pointer;
     border-bottom-left-radius: 70px;
     border-bottom-right-radius: 70px;
-    transform: translateY(-10px) scaleY(0.9);
-    margin-bottom: 100px;
+    transform: translateY(-8px) scaleY(0.9);
+    margin-bottom: 80px;
 }
 #footer li{
     list-style:lower-greek;
@@ -58,8 +58,7 @@
     bottom: 0;
     display:flex;
     visibility: hidden;
-    opacity: 0;
-    margin-top:-100px;
+    opacity: 1;
     position: fixed;
     z-index: -10;
     justify-content: space-between;
@@ -76,7 +75,6 @@
     transition: all .2s ease-in-out;
     visibility:visible;
     opacity: 1;
-    transition-delay: .3s;
 }
 
 .footer-dorito .descriptionFooter{

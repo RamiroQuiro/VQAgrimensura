@@ -151,7 +151,10 @@ nav ul li a:hover {
     transition: all ease 0.2s;
 }
 
-nav .menu-btn,
+nav .menu-btn{
+
+    display: none;
+}
 .menu-icon {
     display: none;
 }
@@ -159,3 +162,20 @@ nav .menu-btn,
 .menu .link{
     cursor: pointer;
 }
+
+@media (max-width: 1100px){
+
+    .img-header{
+        display: none;
+        height:auto !important;
+    }
+    .img-header img{
+        margin: auto;
+        margin-left: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+

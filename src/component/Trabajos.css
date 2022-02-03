@@ -63,3 +63,11 @@
     transform: scale(1.02);
   }
   
+  @media (max-width: 680px){
+    #trabajos{
+    }
+    .trabajos-text{
+      width: 90%;
+      padding: 1em 0;
+    }
+  }

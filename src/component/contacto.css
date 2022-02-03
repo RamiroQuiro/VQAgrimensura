@@ -162,3 +162,36 @@ input:focus {
   transition: all 0.2s ease-in;
   transform: translateY(-2px);
 }
+
+
+@media (max-width: 680px){
+
+  #contact{
+    height:100%;
+    padding:1em;
+  }
+  .contactos{
+    flex-direction: column;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .contactos .redes{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2em 0;    
+  }
+
+  .contactos .redes span{
+    border-bottom: none;
+    margin: 1em;
+    text-align: center;
+  }
+.contactos .contact-input{
+  width: 90%;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+}
